@@ -11,11 +11,11 @@
 4.实现自己的插件代码,并修改js文件
      ……..
 5.将该插件加入ionic
-     ionic plugin add ../../confirmPlugin
+     ionic plugin add ionic plugin add https://github.com/liyufeng1515/ionicPluginDemo.git 
 
-6.查看plugin list
+6.查看plugin列表
      ionic plugin list
-
+     结果示例:com.confirm 0.0.1 "confirmPlugin"
 7.移除plugin—->(插件如果有更改,则需要移除再重新添加)
      ionic plugin remove com.confirm
 
@@ -23,4 +23,5 @@
 $scope.test = function(){
   cordova.plugins.confirmPlugin.confirm();
 }
+启动
 ionic emulate ios
